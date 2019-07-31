@@ -58,7 +58,7 @@ public class AppTest
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(baseUrl);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
 		try {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"gh-ac\"]")));
 			WebElement txtSearch = driver.findElement(By.xpath("//*[@id=\"gh-ac\"]"));
